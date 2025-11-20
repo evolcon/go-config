@@ -1,0 +1,6 @@
+server:
+  port: 8080
+
+app:
+  name: MY_APP
+  version: v1
