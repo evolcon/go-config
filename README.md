@@ -24,7 +24,7 @@ server:
 
 ```.env
 # .env
-SERVER_HOST="0.0.0.0"
+SERVER_HOST=0.0.0.0
 ```
 #### 2. Define your app config structure and call its filling in [main file](main/example.go)
 
@@ -50,7 +50,7 @@ type AppConfig struct {
 func main() {
 	cfg := &AppConfig{}
 
-    # call package initialization and config filling
+    // call package initialization and config filling
 	goconfig.InitOnce()
 	if err := goconfig.Fill(cfg); err != nil {
 		panic(err)

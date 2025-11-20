@@ -2,7 +2,6 @@ package goconfig
 
 import (
 	"flag"
-	"fmt"
 	"os"
 	"strings"
 
@@ -43,7 +42,6 @@ func Fill(config any) error {
 
 func fillFromFile(cfg any) error {
 	if yamlConfigFilePath == "" {
-		fmt.Println("fdvd")
 		return nil
 	}
 
