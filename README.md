@@ -37,7 +37,7 @@ import (
 	goconfig "github.com/evolcon/go-config"
 )
 
-# defining app config
+// defining app config
 type AppConfig struct {
 	Server struct {
 		Host string
